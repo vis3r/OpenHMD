@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
-#include <hidapi/hidapi.h>
+#include <hidapi.h>
 
 #include <omath.h>
 
