@@ -6,67 +6,9 @@
 
 /*  Nxtvr Driver */
 
-//Using as code base: https://github.com/der-b/OpenHMD/tree/master/src/drv_sparkfun_9dof
-
-#include <stdio.h>
-#include <string.h>
-#include <errno.h>
-#include <hidapi/hidapi.h>
-#include <openhmdi.h>
-
-#include <omath.h>
+// Using as code base: https://github.com/der-b/OpenHMD/tree/master/src/drv_sparkfun_9dof
 
 #include "nxtvr.h"
-
-#define FEATURE_BUFFER_SIZE 256
-
-#define HID_REPORT_QUAT_ID 42
-#define HID_REPORT_QUAT_SIZE 17
-
-// These ID's have to be used only for debugging purposes
-#define VENDOR_ID 0x1eaf  // Default Arduion_STM32 VID
-#define PRODUCT_ID 0x0024 // Default Arduion_STM32 PID
-
-#define DEVICE_NAME "NxtVR"
-
-#undef LOGLEVEL
-#define LOGLEVEL 0
-
-typedef struct
-{
-    ohmd_device base;
-    hid_device *handle;
-} nxt_priv;
-
-static void handle_nxtvr_hmd_sensor_msg(nxt_priv *priv, unsigned char *buffer, int size)
-{
-    if (size < 8)
-    {
-        LOGE("NXTVR: REPORT size has to be at least 8!");
-        return;
-    };
-
-    uint8_t reportID = (uint8_t)buffer[0];
-    if (reportID == HID_REPORT_QUAT_ID)
-    {
-        if (size != HID_REPORT_QUAT_SIZE)
-        {
-            LOGE("NXTVR: Invalid data size %d for reportID 42.", size);
-            return;
-        };
-
-        quatf quater;
-        //copy remaining 16 bytes into float union
-        memcpy((void *)&quater, (void *)&buffer[1], 16);
-
-        priv->base.rotation = quater;
-        LOGD("NXT: %f %f %f %f", quater.x, quater.y, quater.z, quater.w);
-    }
-    else
-    {
-        LOGW("RELATIV: Unknown reportID %d.", reportID);
-    }
-}
 
 static void update_device(ohmd_device *device)
 {
@@ -77,12 +19,13 @@ static void update_device(ohmd_device *device)
 
     if (!priv->handle)
     {
-        LOGE("NXTVR Device handle missing in update_device fnc!");
+        //LOGE("NXTVR: Device handle missing in update_device fnc!");
         return;
     }
 
     while (true)
     {
+
         int size = hid_read(priv->handle, (void *)&buffer, FEATURE_BUFFER_SIZE);
         if (size < 0)
         {
@@ -94,7 +37,7 @@ static void update_device(ohmd_device *device)
             return;
         }
 
-        handle_nxtvr_hmd_sensor_msg(priv, buffer, size);
+        handle_nxtvr_sensor_msg(priv, buffer, size);
     }
 }
 
@@ -105,7 +48,7 @@ static int getf(ohmd_device *device, ohmd_float_value type, float *out)
     switch (type)
     {
     case OHMD_ROTATION_QUAT:
-        *(quatf *)out = priv->base.rotation;
+        *(quatf *)out = priv->sensor_fusion.orient;
         break;
     case OHMD_POSITION_VECTOR:
         out[0] = out[1] = out[2] = 0;
@@ -148,13 +91,13 @@ static ohmd_device *open_device(ohmd_driver *driver, ohmd_device_desc *desc)
     priv->handle = hid_open_path(desc->path);
     if (!priv->handle)
     {
-        LOGD("Clould not open directory '" DEVICE_NAME "'.");
+        LOGD("Could not open directory "DEVICE_NAME);
         goto err;
     }
 
     if (hid_set_nonblocking(priv->handle, 1) == -1)
     {
-        LOGD("Clould not set nonblocking on '" DEVICE_NAME "'.");
+        LOGD("Could not set nonblocking on "DEVICE_NAME);
         goto err_handle;
     }
 
@@ -179,6 +122,9 @@ static ohmd_device *open_device(ohmd_driver *driver, ohmd_device_desc *desc)
     priv->base.close = close_device;
     priv->base.getf = getf;
 
+    ofusion_init(&priv->sensor_fusion);
+    priv->sensor_sync = 0;
+
     return (ohmd_device *)priv;
 err_handle:
     hid_close(priv->handle);
@@ -201,9 +147,9 @@ static void get_device_list(ohmd_driver *driver, ohmd_device_list *list)
         printf("id: %d\n", id);
         desc = &list->devices[list->num_devices++];
 
-        strcpy(desc->driver, "Nxtvr Driver");
+        strcpy(desc->driver, "NxtVR Driver");
         strcpy(desc->vendor, "Vis3r");
-        strcpy(desc->product, "Nxtvr Device");
+        strcpy(desc->product, "NxtVR HMD");
 
         strncpy(desc->path, cur_dev->path, OHMD_STR_SIZE);
 
@@ -221,13 +167,13 @@ static void get_device_list(ohmd_driver *driver, ohmd_device_list *list)
 
 static void destroy_driver(ohmd_driver *drv)
 {
-    LOGD("shutting down " DEVICE_NAME " driver");
+    //LOGD("Shutting down driver "DEVICE_NAME);
     free(drv);
 }
 
-ohmd_driver *ohmd_create_relativty_hmd_drv(ohmd_context *ctx)
+ohmd_driver *ohmd_create_nxtvr_drv(ohmd_context *ctx)
 {
-    LOGD("NXTVR: create HMD driver");
+    //LOGD("NXTVR: create HMD driver");
     ohmd_driver *drv = ohmd_alloc(ctx, sizeof(ohmd_driver));
     if (!drv)
         return NULL;

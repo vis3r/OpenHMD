@@ -60,7 +60,7 @@ OHMD_APIENTRYDLL ohmd_context* OHMD_APIENTRY ohmd_ctx_create(void)
 #endif
 
 #if DRIVER_COMMUNITY_VIS3R
-	ctx->drivers[ctx->num_drivers++] = ohmd_create_relativty_hmd_drv(ctx);
+	ctx->drivers[ctx->num_drivers++] = ohmd_create_nxtvr_drv(ctx);
 #endif
 
 #if DRIVER_EXTERNAL

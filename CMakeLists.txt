@@ -141,11 +141,13 @@ endif(OPENHMD_DRIVER_ANDROID)
 
 if(OPENHMD_DRIVER_COMMUNITY_NXTVR)
 	set(openhmd_source_files ${openhmd_source_files}
-		${CMAKE_CURRENT_LIST_DIR}/src/drv_nxtvr/nxtvr.c
-		)
+	${CMAKE_CURRENT_LIST_DIR}/src/drv_nxtvr/nxtvr.c
+	${CMAKE_CURRENT_LIST_DIR}/src/drv_nxtvr/packet.c
+	)
+
 	add_definitions(-DDRIVER_COMMUNITY_VIS3R)
 	find_package(HIDAPI REQUIRED)
-	include_directories(${CMAKE_CURRENT_LIST_DIR}/src/)
+
 	include_directories(${HIDAPI_INCLUDE_DIRS})
 	set(LIBS ${LIBS} ${HIDAPI_LIBRARIES})
 endif(OPENHMD_DRIVER_COMMUNITY_NXTVR)
