@@ -48,10 +48,4 @@ typedef struct
 
 void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int size);
 
-void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buffer);
-void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buffer);
-void nxtvr_handle_mag_report(nxt_priv *priv, const unsigned char *buffer);
-void accel_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec);
-void gyro_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec);
-
 #endif

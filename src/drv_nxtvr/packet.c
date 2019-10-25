@@ -44,14 +44,12 @@ void accel_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec)
 void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buff)
 {
 	int16_t sample[3];
-
-	for (int i = 0; i++; i < 3)
+	for (int i = 0; i < 3; i++)
 	{
-		sample[i] = (int16_t)read16(&buff);
-	}
+		sample[i] = read16(&buff);
+	};
 
 	accel_from_nxtvr_vec(sample, &priv->raw_accel);
-	priv->sensor_sync++;
 }
 
 void gyro_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec)
@@ -65,18 +63,13 @@ void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buff)
 {
 	int16_t sample[3];
 
-	for (int i = 0; i++; i < 3)
+	for (int i = 0; i < 3; i++)
 	{
-		sample[i] = (int16_t)read16(&buff);
+		sample[i] = read16(&buff);
 	}
 
 	gyro_from_nxtvr_vec(sample, &priv->raw_gyro);
-	priv->sensor_sync++;
 };
-
-/*
-void nxtvr_handle_mag_report(nxt_priv *priv, const unsigned char *buff){};
-*/
 
 void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int size)
 {
@@ -86,17 +79,20 @@ void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int si
 		return;
 	}
 
-	uint8_t reportID = (uint8_t)read8(&buffer);
-	LOGI("Report ID: %d", reportID);
+
+	uint8_t reportID = read8(&buffer);
+	LOGD("Report ID: %d", reportID);
 
 	switch (reportID)
 	{
 	case HID_REPORT_ACCEL_ID:
 		nxtvr_handle_accel_report(priv, buffer);
+		priv->sensor_sync++;
 		break;
 
 	case HID_REPORT_GYRO_ID:
 		nxtvr_handle_gyro_report(priv, buffer);
+		priv->sensor_sync++;
 		break;
 
 	case HID_REPORT_MAG_ID:
@@ -107,27 +103,24 @@ void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int si
 		return;
 	}
 
+
 	// all sensor info is sent in it's own
 	// descriptor, be sure we have received both
 	// before doing fusion
 	// TODO: put accel and gyro together
-
-	uint64_t last_sample_tick = priv->tick;
-	priv->tick = ohmd_monotonic_get(priv->base.ctx);
-
 	if (priv->sensor_sync >= 2)
 	{
-		LOGI("Fusion time");
-
 		priv->sensor_sync = 0;
+		uint64_t last_sample_tick = priv->tick;
+		priv->tick = ohmd_monotonic_get(priv->base.ctx);
+
 		// Startup correction, ignore last_sample_tick if zero.
 		uint64_t tick_delta = 0;
 		if (last_sample_tick > 0) //startup correction
 			tick_delta = priv->tick - last_sample_tick;
 
 		float dt = tick_delta / 1000000000000.0f;
-		LOGI("Ticks: %f", dt);
-		LOGI("Ax: %f Gx: %f ", priv->raw_accel.x, priv->raw_gyro.x);
+
 		ofusion_update(&priv->sensor_fusion, dt, &priv->raw_gyro, &priv->raw_accel, &priv->raw_mag);
 	}
 }

@@ -19,14 +19,14 @@ static void update_device(ohmd_device *device)
 
     if (!priv->handle)
     {
-        //LOGE("NXTVR: Device handle missing in update_device fnc!");
+        LOGE("NXTVR: Device handle missing in update_device fnc!");
         return;
     }
 
     while (true)
     {
 
-        int size = hid_read(priv->handle, (void *)&buffer, FEATURE_BUFFER_SIZE);
+        int size = hid_read(priv->handle, buffer, FEATURE_BUFFER_SIZE);
         if (size < 0)
         {
             LOGW("NXTVR: update_device - error reading device.");
@@ -36,7 +36,6 @@ static void update_device(ohmd_device *device)
         {
             return;
         }
-
         handle_nxtvr_sensor_msg(priv, buffer, size);
     }
 }
