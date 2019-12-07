@@ -62,12 +62,17 @@ if get_option('default_library') == 'shared'
 	else
 		c_args += '-fvisibility=hidden'
 	endif
+else
+	if host_machine.system() == 'windows'
+		c_args += '-DOHMD_STATIC'
+	endif
 endif
 
 _drivers = get_option('drivers')
 if _drivers.contains('rift')
 	sources += [
 		'src/drv_oculus_rift/rift.c',
+		'src/drv_oculus_rift/rift-hmd-radio.c',
 		'src/drv_oculus_rift/packet.c',
 	]
 	c_args += '-DDRIVER_OCULUS_RIFT'
@@ -126,6 +131,15 @@ if _drivers.contains('xgvr')
 		'src/drv_3glasses/packet.c',
 	]
 	c_args += '-DDRIVER_XGVR'
+	deps += dep_hidapi
+endif
+
+if _drivers.contains('vrtek')
+	sources += [
+		'src/drv_vrtek/vrtek.c',
+		'src/drv_vrtek/packet.c',
+	]
+	c_args += '-DDRIVER_VRTEK'
 	deps += dep_hidapi
 endif
 
@@ -229,3 +243,27 @@ pkg.generate(
 	url: 'http://www.openhmd.net/',
 )
 install_headers('include/openhmd.h', subdir: 'openhmd')
+
+
+#
+# Unit tests
+#
+
+unittests_sources = [
+	'src/omath.c',
+	'tests/unittests/highlevel.c',
+	'tests/unittests/main.c',
+	'tests/unittests/quat.c',
+	'tests/unittests/tests.h',
+	'tests/unittests/vec.c'
+]
+
+unittests = executable(
+	'openhmd_unittests',
+	unittests_sources,
+	include_directories: include_directories('./include', './src'),
+	link_with: [openhmd_lib],
+	dependencies: [dep_libm, dep_threads]
+)
+
+test('unittests', unittests)

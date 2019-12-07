@@ -45,7 +45,7 @@ For a full list of supported devices please check https://github.com/OpenHMD/Ope
 Using Meson:
 
 With Meson, you can enable and disable drivers to compile OpenHMD with.
-Current available drivers are: rift, deepon, psvr, vive, nolo, wmr, external, and android.
+Current available drivers are: rift, deepon, psvr, vive, nolo, wmr, xgvr, vrtek, external, and android.
 These can be enabled or disabled by adding -Ddrivers=... with a comma separated list after the meson command (or using meson configure ./build -Ddrivers=...).
 By default all drivers except android are enabled.
 
@@ -53,17 +53,10 @@ By default all drivers except android are enabled.
     ninja -C ./build
     sudo ninja -C ./build install
 
-Using make:
-
-    ./autogen.sh # (if you're building from the git repository)
-    ./configure [--enable-openglexample]
-    make
-    sudo make install
-
 Using CMake:
 
 With CMake, you can enable and disable drivers to compile OpenHMD with.
-Current Available drivers are: OPENHMD_DRIVER_OCULUS_RIFT, OPENHMD_DRIVER_DEEPOON, OPENHMD_DRIVER_WMR, OPENHMD_DRIVER_PSVR, OPENHMD_DRIVER_HTC_VIVE, OPENHMD_DRIVER_NOLO, OPENHMD_DRIVER_EXTERNAL and OPENHMD_DRIVER_ANDROID.
+Current Available drivers are: OPENHMD_DRIVER_OCULUS_RIFT, OPENHMD_DRIVER_DEEPOON, OPENHMD_DRIVER_PSVR, OPENHMD_DRIVER_HTC_VIVE, OPENHMD_DRIVER_NOLO, OPENHMD_DRIVER_WMR, OPENHMD_DRIVER_XGVR, OPENHMD_DRIVER_VRTEK, OPENHMD_DRIVER_EXTERNAL and OPENHMD_DRIVER_ANDROID.
 These can be enabled or disabled adding -DDRIVER_OF_CHOICE=ON after the cmake command (or using cmake-gui).
 
     mkdir build
@@ -91,14 +84,6 @@ This will generate a project file for Visual Studio 2013 for 64 bit systems.
 Open the project file and compile as you usually would do.
 
 ### Cross compiling for windows using mingw
-Using Make:
-
-    export PREFIX=/usr/i686-w64-mingw32/ (or whatever your mingw path is)
-    PKG_CONFIG_LIBDIR=$PREFIX/lib/pkgconfig ./configure --build=`gcc -dumpmachine` --host=i686-w64-mingw32 --prefix=$PREFIX
-    make
-    
-the library will end up in the .lib directory, you can use microsoft's lib.exe to make a .lib file for it
-
 Using CMake:
 
 For MinGW cross compiling, toolchain files tend to be the best solution.
