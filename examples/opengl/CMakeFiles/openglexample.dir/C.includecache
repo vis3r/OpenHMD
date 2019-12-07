@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl/gl.c
+gl.h
+/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl/gl.h
+string.h
+-
+math.h
+-
+signal.h
+-
+
+/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl/gl.h
+SDL2/SDL.h
+-
+GL/glew.h
+-
+GL/gl.h
+-
+OpenGL/gl.h
+-
+
+/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl/main.c
+openhmd.h
+-
+stdbool.h
+-
+assert.h
+-
+math.h
+-
+gl.h
+/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl/gl.h
+

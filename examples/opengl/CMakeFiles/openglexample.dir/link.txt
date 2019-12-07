@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/openglexample.dir/gl.o CMakeFiles/openglexample.dir/main.o  -o openglexample  -L/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl -Wl,-rpath,/home/tomas/Desktop/OpenHMD_ALL/OpenHMD/examples/opengl -lopenhmd -lm -lSDL2 -lGLEW -lGLU -lGL 
