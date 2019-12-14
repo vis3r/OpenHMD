@@ -54,9 +54,12 @@ void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buff)
 
 void gyro_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec)
 {
-	out_vec->x = (float)smp[0] * (124.87 / 32768.0);
-	out_vec->y = (float)smp[1] * (124.87 / 32768.0);
-	out_vec->z = (float)smp[2] * (124.87 / 32768.0);
+	//Based on the scale factor of the MPU6050, by default, this would be 131,
+	//which is the case in our config
+	//TODO: Look for the scale factor of the BMX
+	out_vec->x = (float)smp[0] * (1.0 / 131.0);
+	out_vec->y = (float)smp[1] * (1.0 / 131.0);
+	out_vec->z = (float)smp[2] * (1.0 / 131.0);
 }
 
 void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buff)
