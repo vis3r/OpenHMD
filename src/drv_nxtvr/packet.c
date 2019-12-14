@@ -34,45 +34,71 @@ inline static uint32_t read32(const unsigned char **buffer)
 	return ret;
 }
 
-void accel_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec)
+void confRes_from_nxtvr_gyro_scale(const int32_t smp, float gyroScaleFactor)
 {
-	out_vec->x = (float)smp[0] * (2.0 / 2048.0);
-	out_vec->y = (float)smp[1] * (2.0 / 2048.0);
-	out_vec->z = (float)smp[2] * (2.0 / 2048.0);
+	gyroScaleFactor = (float)smp;
+}
+
+void confRes_from_nxtvr_accel_scale(const int32_t smp, float accelScaleFactor)
+{
+	accelScaleFactor = (float)smp;
+}
+
+void confRes_from_nxtvr_mag_scale(const int32_t smp, float magScaleFactor)
+{
+	magScaleFactor = (float)smp;
+}
+
+void nxtvr_handle_confRes_report(nxt_priv *priv, const unsigned char *buff)
+{
+	int32_t sample;
+	sample = read32(&buff);
+	confRes_from_nxtvr_accel_scale(sample, priv->accel_Scale);
+	sample = read32(&buff);
+	confRes_from_nxtvr_gyro_scale(sample, priv->gyro_Scale);
+	sample = read32(&buff);
+	confRes_from_nxtvr_mag_scale(sample, priv->mag_Scale);
+}
+
+void accel_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
+{
+	out_vec->x = (float)smp[0] * (1.0 / priv->accel_Scale);
+	out_vec->y = (float)smp[1] * (1.0 / priv->accel_Scale);
+	out_vec->z = (float)smp[2] * (1.0 / priv->accel_Scale);
 }
 
 void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buff)
 {
-	int16_t sample[3];
+	int32_t sample[3];
 	for (int i = 0; i < 3; i++)
 	{
-		sample[i] = read16(&buff);
+		sample[i] = read32(&buff);
 	};
 
-	accel_from_nxtvr_vec(sample, &priv->raw_accel);
+	accel_from_nxtvr_vec(sample, &priv->raw_accel, priv);
 }
 
-void gyro_from_nxtvr_vec(const int16_t *smp, vec3f *out_vec)
+void gyro_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
 {
 	//Based on the scale factor of the MPU6050, by default, this would be 131,
 	//which is the case in our config
 	//TODO: Look for the scale factor of the BMX
-	out_vec->x = (float)smp[0] * (1.0 / 131.0);
-	out_vec->y = (float)smp[1] * (1.0 / 131.0);
-	out_vec->z = (float)smp[2] * (1.0 / 131.0);
+	out_vec->x = (float)smp[0] * (1.0 / priv->gyro_Scale);
+	out_vec->y = (float)smp[1] * (1.0 / priv->gyro_Scale);
+	out_vec->z = (float)smp[2] * (1.0 / priv->gyro_Scale);
 }
 
 void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buff)
 {
-	int16_t sample[3];
+	int32_t sample[3];
 
 	for (int i = 0; i < 3; i++)
 	{
-		sample[i] = read16(&buff);
+		sample[i] = read32(&buff);
 	}
 
-	gyro_from_nxtvr_vec(sample, &priv->raw_gyro);
-};
+	gyro_from_nxtvr_vec(sample, &priv->raw_gyro, priv);
+}
 
 void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int size)
 {
@@ -88,18 +114,16 @@ void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int si
 
 	switch (reportID)
 	{
-	case HID_REPORT_ACCEL_ID:
-		nxtvr_handle_accel_report(priv, buffer);
+	case HID_REPORT_CONFRES_ID:
+		nxtvr_handle_confRes_report(priv, buffer);
 		priv->sensor_sync++;
 		break;
 
-	case HID_REPORT_GYRO_ID:
+	case HID_REPORT_MOTION_ID:
+		nxtvr_handle_accel_report(priv, buffer);
 		nxtvr_handle_gyro_report(priv, buffer);
 		priv->sensor_sync++;
 		break;
-
-	case HID_REPORT_MAG_ID:
-		return;
 
 	default:
 		LOGE("NXTVR: Unknown reportID %d ", reportID);

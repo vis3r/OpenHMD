@@ -15,21 +15,18 @@
 
 #define FEATURE_BUFFER_SIZE 256
 
-#define HID_REPORT_ACCEL_ID 1
-#define HID_REPORT_ACCEL_SIZE 12
+#define HID_REPORT_CONFRES_ID 1
+#define HID_REPORT_CONFRES_SIZE 32
 
-#define HID_REPORT_GYRO_ID 2
-#define HID_REPORT_GYRO_SIZE 12
-
-#define HID_REPORT_MAG_ID 3
-#define HID_REPORT_MAG_SIZE 12
+#define HID_REPORT_MOTION_ID 2
+#define HID_REPORT_MOTION_SIZE 32
 
 // These ID's should be used only for debugging purposes
 #define DEFAULT_STM32_VENDOR_ID 0x1eaf  // Default stm32duino VID
 #define DEFAULT_STM32_PRODUCT_ID 0x0024 // Default stm32duino PID
 
 #define VENDOR_ID 0x1209
-#define PRODUCT_ID 0x9D0F
+#define PRODUCT_ID 0x6D0F
 
 #define DEVICE_NAME "NxtVR HMD"
 
@@ -43,7 +40,9 @@ typedef struct
     vec3f raw_accel, raw_gyro, raw_mag;
     int sensor_sync;
     uint64_t tick;
-
+    float accel_Scale;
+    float gyro_Scale;   
+    float mag_Scale; 
 } nxt_priv;
 
 void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int size);
