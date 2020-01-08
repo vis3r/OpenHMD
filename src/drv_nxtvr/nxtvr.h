@@ -26,7 +26,7 @@
 #define DEFAULT_STM32_PRODUCT_ID 0x0024 // Default stm32duino PID
 
 #define VENDOR_ID 0x1209
-#define PRODUCT_ID 0x6D0F
+#define PRODUCT_ID 0x9D0F
 
 #define DEVICE_NAME "NxtVR HMD"
 
@@ -40,9 +40,8 @@ typedef struct
     vec3f raw_accel, raw_gyro, raw_mag;
     int sensor_sync;
     uint64_t tick;
-    float accel_Scale;
-    float gyro_Scale;   
-    float mag_Scale; 
+    float Scale[3];
+
 } nxt_priv;
 
 void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer, int size);

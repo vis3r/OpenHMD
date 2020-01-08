@@ -25,7 +25,6 @@ static void update_device(ohmd_device *device)
 
     while (true)
     {
-
         int size = hid_read(priv->handle, buffer, FEATURE_BUFFER_SIZE);
         if (size < 0)
         {

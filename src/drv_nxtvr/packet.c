@@ -34,37 +34,21 @@ inline static uint32_t read32(const unsigned char **buffer)
 	return ret;
 }
 
-void confRes_from_nxtvr_gyro_scale(const int32_t smp, float gyroScaleFactor)
-{
-	gyroScaleFactor = (float)smp;
-}
-
-void confRes_from_nxtvr_accel_scale(const int32_t smp, float accelScaleFactor)
-{
-	accelScaleFactor = (float)smp;
-}
-
-void confRes_from_nxtvr_mag_scale(const int32_t smp, float magScaleFactor)
-{
-	magScaleFactor = (float)smp;
-}
-
 void nxtvr_handle_confRes_report(nxt_priv *priv, const unsigned char *buff)
 {
 	int32_t sample;
-	sample = read32(&buff);
-	confRes_from_nxtvr_accel_scale(sample, priv->accel_Scale);
-	sample = read32(&buff);
-	confRes_from_nxtvr_gyro_scale(sample, priv->gyro_Scale);
-	sample = read32(&buff);
-	confRes_from_nxtvr_mag_scale(sample, priv->mag_Scale);
+	for(int i = 0; i < 3; i++)
+	{
+		sample = read32(&buff);
+		priv->Scale[i] = sample;		
+	}
 }
 
 void accel_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
 {
-	out_vec->x = (float)smp[0] * (1.0 / priv->accel_Scale);
-	out_vec->y = (float)smp[1] * (1.0 / priv->accel_Scale);
-	out_vec->z = (float)smp[2] * (1.0 / priv->accel_Scale);
+	out_vec->x = (float)smp[0] * (1.0 / priv->Scale[0]);
+	out_vec->y = (float)smp[1] * (1.0 / priv->Scale[0]);
+	out_vec->z = (float)smp[2] * (1.0 / priv->Scale[0]);
 }
 
 void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buff)
@@ -83,9 +67,9 @@ void gyro_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
 	//Based on the scale factor of the MPU6050, by default, this would be 131,
 	//which is the case in our config
 	//TODO: Look for the scale factor of the BMX
-	out_vec->x = (float)smp[0] * (1.0 / priv->gyro_Scale);
-	out_vec->y = (float)smp[1] * (1.0 / priv->gyro_Scale);
-	out_vec->z = (float)smp[2] * (1.0 / priv->gyro_Scale);
+	out_vec->x = (float)smp[0] * (1.0 / priv->Scale[1]);
+	out_vec->y = (float)smp[1] * (1.0 / priv->Scale[1]);
+	out_vec->z = (float)smp[2] * (1.0 / priv->Scale[1]);
 }
 
 void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buff)
