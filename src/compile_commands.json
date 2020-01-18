@@ -1,0 +1,287 @@
+[
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/openhmd.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/openhmd.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/openhmd.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/platform-win32.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/platform-win32.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/platform-win32.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_dummy/dummy.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_dummy/dummy.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_dummy/dummy.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/omath.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/omath.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/omath.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/platform-posix.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/platform-posix.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/platform-posix.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/fusion.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/fusion.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/fusion.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/shaders.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/shaders.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/shaders.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_oculus_rift/rift.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_oculus_rift/rift-hmd-radio.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift-hmd-radio.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift-hmd-radio.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_oculus_rift/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/ext_deps/nxjson.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/ext_deps/nxjson.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/ext_deps/nxjson.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_deepoon/deepoon.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/deepoon.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/deepoon.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_deepoon/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_wmr/wmr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/wmr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/wmr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_wmr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_psvr/psvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/psvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/psvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_psvr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_htc_vive/vive.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/vive.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/vive.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_htc_vive/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_nolo/nolo.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/nolo.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/nolo.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_nolo/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_3glasses/xgvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/xgvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/xgvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_3glasses/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_vrtek/vrtek.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/vrtek.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/vrtek.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_vrtek/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_external/external.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_external/external.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_external/external.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_nxtvr/nxtvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/nxtvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/nxtvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -DOHMD_STATIC -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-static.dir/src/drv_nxtvr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/openhmd.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/openhmd.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/openhmd.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/platform-win32.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/platform-win32.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/platform-win32.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_dummy/dummy.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_dummy/dummy.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_dummy/dummy.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/omath.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/omath.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/omath.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/platform-posix.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/platform-posix.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/platform-posix.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/fusion.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/fusion.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/fusion.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/shaders.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/shaders.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/shaders.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_oculus_rift/rift.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_oculus_rift/rift-hmd-radio.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift-hmd-radio.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/rift-hmd-radio.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_oculus_rift/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_oculus_rift/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/ext_deps/nxjson.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/ext_deps/nxjson.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/ext_deps/nxjson.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_deepoon/deepoon.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/deepoon.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/deepoon.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_deepoon/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_deepoon/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_wmr/wmr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/wmr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/wmr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_wmr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_wmr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_psvr/psvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/psvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/psvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_psvr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_psvr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_htc_vive/vive.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/vive.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/vive.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_htc_vive/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_htc_vive/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_nolo/nolo.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/nolo.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/nolo.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_nolo/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nolo/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_3glasses/xgvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/xgvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/xgvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_3glasses/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_3glasses/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_vrtek/vrtek.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/vrtek.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/vrtek.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_vrtek/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_vrtek/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_external/external.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_external/external.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_external/external.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_nxtvr/nxtvr.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/nxtvr.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/nxtvr.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -Dopenhmd_shared_EXPORTS -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIC   -std=gnu99 -o CMakeFiles/openhmd-shared.dir/src/drv_nxtvr/packet.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/packet.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/src/drv_nxtvr/packet.c"
+},
+{
+  "directory": "/home/anorak/Projects/vis3r/OpenHMD/build/examples/simple",
+  "command": "/usr/bin/cc -DDRIVER_COMMUNITY_VIS3R -DDRIVER_DEEPOON -DDRIVER_EXTERNAL -DDRIVER_HTC_VIVE -DDRIVER_NOLO -DDRIVER_OCULUS_RIFT -DDRIVER_PSVR -DDRIVER_VRTEK -DDRIVER_WMR -DDRIVER_XGVR -I/usr/include/hidapi -I/home/anorak/Projects/vis3r/OpenHMD/build/include -I/home/anorak/Projects/vis3r/OpenHMD/include  -fPIE   -std=gnu99 -o CMakeFiles/simple.dir/simple.c.o   -c /home/anorak/Projects/vis3r/OpenHMD/examples/simple/simple.c",
+  "file": "/home/anorak/Projects/vis3r/OpenHMD/examples/simple/simple.c"
+}
+]
