@@ -15,10 +15,10 @@
 
 #define FEATURE_BUFFER_SIZE 256
 
-#define HID_REPORT_CONFRES_ID 1
-#define HID_REPORT_CONFRES_SIZE 32
+//#define HID_REPORT_CONFRES_ID 1
+//#define HID_REPORT_CONFRES_SIZE 32
 
-#define HID_REPORT_MOTION_ID 2
+#define HID_REPORT_MOTION_ID 1
 #define HID_REPORT_MOTION_SIZE 32
 
 // These ID's should be used only for debugging purposes

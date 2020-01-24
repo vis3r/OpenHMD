@@ -159,7 +159,6 @@ if(OPENHMD_DRIVER_COMMUNITY_NXTVR)
 	${CMAKE_CURRENT_LIST_DIR}/src/drv_nxtvr/nxtvr.c
 	${CMAKE_CURRENT_LIST_DIR}/src/drv_nxtvr/packet.c
 	)
-
 	add_definitions(-DDRIVER_COMMUNITY_VIS3R)
 	find_package(HIDAPI REQUIRED)
 
