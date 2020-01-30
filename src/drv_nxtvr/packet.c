@@ -35,25 +35,11 @@ inline static uint32_t read32(const unsigned char **buffer)
     return ret;
 }
 
-void nxtvr_handle_confRes_report(nxt_priv *priv, const unsigned char *buff)
-{
-    int32_t sample;
-    for (int i = 0; i < 3; i++)
-    {
-        priv->Scale[i] = 1.0f;
-    }
-}
-
 void accel_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
 {
-    float out[3];
-    for (int i = 0; i < 3; i++)
-    {
-        out[i] = (float)(smp[i] - 1073741824) / 2147483648;
-    }
-    out_vec->x = (float)out[0] * (1.0 / priv->Scale[0]);
-    out_vec->y = (float)out[1] * (1.0 / priv->Scale[0]);
-    out_vec->z = (float)out[2] * (1.0 / priv->Scale[0]);
+    out_vec->x = (float)smp[0];
+    out_vec->y = (float)smp[1];
+    out_vec->z = (float)smp[2];
 }
 
 void nxtvr_handle_accel_report(nxt_priv *priv, const unsigned char *buff)
@@ -72,14 +58,10 @@ void gyro_from_nxtvr_vec(const int32_t *smp, vec3f *out_vec, nxt_priv *priv)
     //Based on the scale factor of the MPU6050, by default, this would be 131,
     //which is the case in our config
     //TODO: Look for the scale factor of the BMX
-    float out_f[3];
-    for (int i = 0; i < 3; i++)
-    {
-        out_f[i] = (float)(smp[i] - 1073741824) / 2147483648;
-    }
-    out_vec->x = (float)out_f[0] * (1.0 / priv->Scale[1]);
-    out_vec->y = (float)out_f[1] * (1.0 / priv->Scale[1]);
-    out_vec->z = (float)out_f[2] * (1.0 / priv->Scale[1]);
+
+    out_vec->x = (float)smp[0];
+    out_vec->y = (float)smp[1];
+    out_vec->z = (float)smp[2];
 }
 
 void nxtvr_handle_gyro_report(nxt_priv *priv, const unsigned char *buff)
@@ -140,7 +122,7 @@ void handle_nxtvr_sensor_msg(nxt_priv *priv, const unsigned char *buffer,
         if (last_sample_tick > 0) //startup correction
             tick_delta = priv->tick - last_sample_tick;
 
-        float dt = tick_delta / 1000000000000.0f;
+        float dt = tick_delta / 10000000000000.0f;
 
         ofusion_update(&priv->sensor_fusion, dt, &priv->raw_gyro, &priv->raw_accel,
                        &priv->raw_mag);
